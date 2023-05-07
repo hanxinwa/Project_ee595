@@ -1,5 +1,5 @@
 # ====================INFORMATION===========================
-# Makefile for Verilator-SystemC 
+# Makefile for Verilator-C++
 # Maolin Xiong 6727554115
 # May/2023
 # ====================INSTRUCTIONS==========================
@@ -26,7 +26,7 @@ verilate: .stamp.verilate
 
 #build the verilated source using build
 .PHONY:build
-build: obj_dir/Valu
+build: obj_dir/Vtop
 
 #open GTKWave to check the waveform
 .PHONY:waves
@@ -50,7 +50,7 @@ waveform.vcd: ./obj_dir/V$(MODULE)
 .stamp.verilate: $(MODULE).sv tb_$(MODULE).cpp
 	@echo
 	@echo "### VERILATING ###"
-	verilator -Wall --trace --x-assign unique --x-initial unique -cc $(MODULE).sv --exe tb_$(MODULE).cpp
+	verilator -Wall --trace --x-assign unique --x-initial unique -cc --timing $(MODULE).sv --exe tb_$(MODULE)_uvm.cpp
 	@touch .stamp.verilate
 
 #linting check
