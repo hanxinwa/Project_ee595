@@ -1,0 +1,9 @@
+VeriSC
+=======
+VeriSC provides an easy way to verify your hardware with SystemC, with an option to use SystemC-UVM and additional libraries to enhance your verification environment. It is possible to simulate your RTL code with Verilator or Synopsys VCS simulators.
+
+The project is composed of multiple parts:
+
+CMake build system for RTL and/or SystemC simulation, provides a structure ways for organizing your RTL projects and testbenches with CMake recipes, making IP blocks easy to package and distribute.
+It allows proper SystemC verification of RTL code, similar to what SystemVerilog can provide. It supports UVM enviroments, Constraint Randomization, Coverage, RTL simulation using external libraries and tools. All that at no cost using only open source and free tools and libraries, with an optional support for commercial RTL simulators.
+Several Universal Verification Components (UVCs) are provided for standard interconnect protocols (APB, I2C, Picorv32 NMI... tb
