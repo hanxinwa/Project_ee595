@@ -6,4 +6,4 @@ verification based on UVM-systemC by Verilator
   Hanxin Wang <<hanxinwa@usc.edu>>	  <br/>
 
 	Supervisor: Arash Fayyazi <fayyazi@usc.edu>
-
+	Professor: Shahin Nazarian <shahin.nazarian@usc.edu>
